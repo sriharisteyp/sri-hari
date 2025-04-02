@@ -14,7 +14,11 @@ const SideSocialLinks = () => {
   }, []);
   
   return (
-    <div className={`fixed left-10 bottom-0 hidden md:block transition-opacity duration-500 ${isMounted ? 'opacity-100' : 'opacity-0'}`}>
+    <div 
+      className={`fixed left-10 bottom-0 hidden md:block transition-all duration-700 ${
+        isMounted ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
+      }`}
+    >
       <SocialLinks vertical />
     </div>
   );
