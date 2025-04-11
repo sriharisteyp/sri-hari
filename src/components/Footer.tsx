@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
         
         <p className="mb-2">
-          Designed & Built with ❤️ by <span className="text-portfolio-teal">Your Name</span>
+          Designed & Built with ❤️ by <span className="text-portfolio-teal">Sri Hari</span>
         </p>
         <p>© {new Date().getFullYear()} All Rights Reserved</p>
       </div>

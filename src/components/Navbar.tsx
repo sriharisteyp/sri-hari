@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  
+
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 10;
@@ -29,7 +29,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav 
+    <nav
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300 px-4 py-4 md:px-8",
         scrolled ? "bg-portfolio-navy/90 backdrop-blur shadow-md" : "bg-transparent"
@@ -37,7 +37,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <a href="#" className="text-portfolio-teal font-bold text-xl">
-          Portfolio
+          <img src="logo.png" alt="logo" className='w-[150px]' />
         </a>
 
         {/* Desktop Menu */}
@@ -48,7 +48,6 @@ const Navbar = () => {
               href={item.href}
               className="text-portfolio-light-slate hover:text-portfolio-teal transition-colors"
             >
-              <span className="text-portfolio-teal mr-1">{index + 1}.</span>
               {item.name}
             </a>
           ))}
@@ -57,14 +56,14 @@ const Navbar = () => {
             variant="outline"
             className="border-portfolio-teal text-portfolio-teal hover:bg-portfolio-teal/10"
           >
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/resume.pdf" target="_blank" download rel="noopener noreferrer">
               Resume
             </a>
           </Button>
         </div>
 
         {/* Mobile Menu Button */}
-        <button 
+        <button
           className="md:hidden text-portfolio-teal"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >

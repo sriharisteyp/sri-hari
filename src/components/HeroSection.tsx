@@ -16,7 +16,7 @@ const HeroSection = () => {
       <div className={cn("space-y-4", isMounted ? "animate-fade-in" : "opacity-0")}>
         <p className="text-portfolio-teal mb-6">Hi, my name is</p>
         <h1 className="text-4xl md:text-7xl font-bold text-portfolio-lightest-slate">
-          Your Name.
+          Sri Hari S A.
         </h1>
         <h2 className="text-3xl md:text-6xl font-bold text-portfolio-slate">
           I build things for the web.

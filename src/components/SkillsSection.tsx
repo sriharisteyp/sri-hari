@@ -38,12 +38,12 @@ const SkillsSection = () => {
     },
     {
       title: "Frameworks & Libraries",
-      skills: ["React", "Next.js", "Node.js", "Express", "Django", "Tailwind CSS"],
+      skills: ["React", "Next.js", "Node.js", "Axios", "Django", "Tailwind CSS"],
       icon: "📚"
     },
     {
       title: "Tools & Software",
-      skills: ["Git/GitHub", "VS Code", "Docker", "Webpack", "Figma", "Postman"],
+      skills: ["Git/GitHub", "VS Code", "Cmder", "Android Studio", "Figma", "Postman"],
       icon: "🛠️"
     },
     {

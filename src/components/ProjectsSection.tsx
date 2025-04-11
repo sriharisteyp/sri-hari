@@ -7,37 +7,37 @@ import { Badge } from '@/components/ui/badge';
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "Task Manager Application",
-      description: "A full-stack task management application with user authentication, task categories, and a drag-and-drop interface.",
-      techStack: ["React", "Node.js", "Express", "MongoDB"],
+      title: "Moke Travels",
+      description: "A full-stack Travel places application Where user can select the place and gp.",
+      techStack: ["Html", "Talrop Api", "Css", "Js"],
       liveLink: "https://project-demo.example.com",
-      githubLink: "https://github.com/yourusername/project",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072",
+      githubLink: "https://github.com/srihariSteyp/moke-travel",
+      image: "/moke.png",
     },
     {
-      title: "E-commerce Platform",
-      description: "An online store with product listings, shopping cart functionality, user reviews, and payment processing integration.",
-      techStack: ["Next.js", "Tailwind CSS", "Prisma", "PostgreSQL"],
-      liveLink: "https://project-demo.example.com",
-      githubLink: "https://github.com/yourusername/project",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2069",
+      title: "Task Link",
+      description: "An online local service website. Currently Building on it.",
+      techStack: ["Next.js", "Tailwind CSS", "Django", "PostgreSQL"],
+      liveLink: "",
+      githubLink: "",
+      image: "/task.png",
     },
     {
-      title: "Weather Dashboard",
+      title: "Aura Weather Dashboard",
       description: "A weather application that shows current conditions and forecasts based on user location or search queries.",
-      techStack: ["JavaScript", "HTML5", "CSS", "Weather API"],
+      techStack: ["JavaScript", "Recat", "CSS", "Vite"],
       liveLink: "https://project-demo.example.com",
       githubLink: "https://github.com/yourusername/project",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072",
     },
     {
-      title: "Blog Platform",
-      description: "A content management system for creating, editing, and publishing blog posts with markdown support.",
-      techStack: ["React", "Firebase", "Tailwind CSS"],
+      title: "DreamPilot | Pointing to excelence",
+      description: "A career guidence website  application that shows current jobs and ways to get there based on user skils and intrest or search queries. Curently working on.",
+      techStack: ["JavaScript", "Recat", "CSS", "Vite"],
       liveLink: "https://project-demo.example.com",
       githubLink: "https://github.com/yourusername/project",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070",
-    }
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072",
+    },
   ];
 
   return (

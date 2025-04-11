@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Github, Linkedin, Mail, FileText } from 'lucide-react';
+import { Github, Linkedin, Mail, FileText, Youtube } from 'lucide-react';
 
 interface SocialLinksProps {
   vertical?: boolean;
@@ -9,8 +9,8 @@ interface SocialLinksProps {
 const SocialLinks: React.FC<SocialLinksProps> = ({ vertical = false }) => {
   const socialLinks = [
     { icon: <Github size={20} />, href: "https://github.com", label: "GitHub" },
-    { icon: <Linkedin size={20} />, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: <Mail size={20} />, href: "mailto:your.email@example.com", label: "Email" },
+    { icon: <Linkedin size={20} />, href: "https://steyp.com", label: "Steyp" },
+    { icon: <Youtube size={20} />, href: "https://www.youtube.com/@CodeGenesis335", label: "Youtube Channel" },
     { icon: <FileText size={20} />, href: "/resume.pdf", label: "Resume" },
   ];
   

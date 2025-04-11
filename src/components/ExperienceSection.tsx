@@ -11,8 +11,8 @@ const ExperienceSection = () => {
       role: "Developer",
       date: "2021 - Present",
       description: [
-        "🔹 How I Joined STEYP: I discovered the program through a tech meetup and was immediately drawn to its practical approach to learning development.",
-        "📚 What I Learned: Through STEYP, I mastered React, Node.js, and MongoDB, gaining hands-on experience with real-world projects.",
+        "🔹 How I Joined STEYP: When I was young I was very intrested in computer, when I heard about steyp It felt very intresting and I joined.",
+        "📚 What I Learned: Through STEYP, I mastered React, Python, Django, and Next js  gaining hands-on experience with real-world projects.",
         "🚀 Challenges & Growth: Initially, I struggled with complex state management, but the program's mentorship helped me overcome these obstacles.",
         "🎯 Future Goals: STEYP has inspired me to pursue full-stack development with a focus on creating accessible and performant web applications.",
       ],

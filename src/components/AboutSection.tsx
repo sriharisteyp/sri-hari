@@ -12,14 +12,16 @@ const AboutSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
         <div className="md:col-span-3">
           <p className="text-portfolio-light-slate mb-4">
-            👋 Hello! I'm <span className="text-portfolio-teal">Your Name</span>, a passionate developer with 
+            👋 Hello! I'm <span className="text-portfolio-teal">Sri Hari</span>, a passionate developer with 
             experience in front-end, back-end, and full-stack development.
           </p>
           
           <p className="text-portfolio-light-slate mb-4">
-            📚 I have a background in Computer Science from [Your University]. My journey into 
-            development began when I created my first website in high school, and I've been 
-            hooked on creating digital experiences ever since.
+            📚 I started my coding journey through <span className="text-portfolio-teal">Steyp EdTech platform</span>,
+             where I learned the fundamentals of programming. My passion for 
+             development grew as I started learning Steyp,  where I expanded 
+             my skills in <b>web development, backend technologies, and real-world
+              software development</b>.
           </p>
           
           <p className="text-portfolio-light-slate mb-4">
@@ -48,7 +50,7 @@ const AboutSection = () => {
               <div className="aspect-square relative overflow-hidden bg-portfolio-light">
                 <div className="absolute inset-0 bg-portfolio-teal/10"></div>
                 <img
-                  src="https://images.unsplash.com/photo-1649992355604-7d0e9e1bc22c?q=80&w=580"
+                  src="/ChatGPT Image Apr 2, 2025, 07_43_48 PM.png"
                   alt="Your Name"
                   className="object-cover h-full w-full mix-blend-normal opacity-90 grayscale hover:grayscale-0 transition duration-300"
                 />

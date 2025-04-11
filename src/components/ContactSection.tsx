@@ -1,31 +1,33 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Linkedin, Github, Mail, FileText } from 'lucide-react';
+import { Linkedin, Github, Mail, FileText, Youtube, Phone } from 'lucide-react';
 
 const ContactSection = () => {
   const contactLinks = [
     {
-      name: "Email",
-      value: "your.email@example.com",
-      icon: <Mail className="h-6 w-6" />,
-      href: "mailto:your.email@example.com",
+      name: "Youtube Channel",
+      value: "www.youtube.com/@CodeGenesis",
+      icon: <Youtube className="h-6 w-6" />,
+      href: "https://www.youtube.com/@CodeGenesis335",
       color: "hover:text-portfolio-teal",
+      external: true, // Mark as external link
     },
     {
-      name: "LinkedIn",
-      value: "linkedin.com/in/yourusername",
-      icon: <Linkedin className="h-6 w-6" />,
-      href: "https://linkedin.com/in/yourusername",
+      name: "Phone number",
+      value: "8281176376",
+      icon: <Phone className="h-6 w-6" />,
+      href: "tel:+91 8281176376",
       color: "hover:text-blue-500",
+      external: false,
     },
     {
       name: "GitHub",
-      value: "github.com/yourusername",
+      value: "github.com/srihariSteyp",
       icon: <Github className="h-6 w-6" />,
-      href: "https://github.com/yourusername",
+      href: "https://github.com/srihariSteyp",
       color: "hover:text-gray-400",
+      external: true, // Mark as external link
     },
     {
       name: "Resume",
@@ -33,6 +35,8 @@ const ContactSection = () => {
       icon: <FileText className="h-6 w-6" />,
       href: "/resume.pdf",
       color: "hover:text-green-500",
+      external: false, // Local link for download
+      download: true, // Add download attribute
     },
   ];
 
@@ -54,7 +58,7 @@ const ContactSection = () => {
           size="lg"
           className="bg-transparent hover:bg-portfolio-teal/10 border border-portfolio-teal text-portfolio-teal"
         >
-          <a href="mailto:your.email@example.com">Say Hello</a>
+          <a href="https://wa.me/8281176376?text=Hi">Say Hello</a>
         </Button>
       </div>
       
@@ -63,8 +67,9 @@ const ContactSection = () => {
           <a
             key={link.name}
             href={link.href}
-            target={link.href.startsWith("http") ? "_blank" : undefined}
-            rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+            target={link.external ? "_blank" : "_self"} // Only open in a new tab for external links
+            rel={link.external ? "noopener noreferrer" : undefined} // Add rel for security for external links
+            download={link.download ? true : undefined} // Add the download attribute for resume link
             className="block"
           >
             <Card className="bg-portfolio-light border-portfolio-lightest/10 hover:border-portfolio-teal/30 transition-all duration-300">
