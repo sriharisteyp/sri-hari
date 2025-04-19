@@ -7,35 +7,17 @@ import { Badge } from '@/components/ui/badge';
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "Moke Travels",
-      description: "A full-stack Travel places application Where user can select the place and gp.",
-      techStack: ["Html", "Talrop Api", "Css", "Js"],
-      liveLink: "https://project-demo.example.com",
-      githubLink: "https://github.com/srihariSteyp/moke-travel",
-      image: "/moke.png",
-    },
-    {
-      title: "Task Link",
-      description: "An online local service website. Currently Building on it.",
-      techStack: ["Next.js", "Tailwind CSS", "Django", "PostgreSQL"],
-      liveLink: "",
-      githubLink: "",
-      image: "/task.png",
-    },
-    {
       title: "Aura Weather Dashboard",
       description: "A weather application that shows current conditions and forecasts based on user location or search queries.",
       techStack: ["JavaScript", "Recat", "CSS", "Vite"],
-      liveLink: "https://project-demo.example.com",
-      githubLink: "https://github.com/yourusername/project",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072",
+      liveLink: "https://aura-weather-forecast-app.lovable.app/",
+      image: "/Aura.png",
     },
     {
-      title: "DreamPilot | Pointing to excelence",
+      title: "DreamPilot | Pointing to Excellence",
       description: "A career guidence website  application that shows current jobs and ways to get there based on user skils and intrest or search queries. Curently working on.",
-      techStack: ["JavaScript", "Recat", "CSS", "Vite"],
-      liveLink: "https://project-demo.example.com",
-      githubLink: "https://github.com/yourusername/project",
+      techStack: ["JavaScript", "Tailwind", "CSS", "Vite", "Next-UI"],
+      liveLink: "",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072",
     },
   ];
@@ -81,15 +63,7 @@ const ProjectsSection = () => {
               </div>
             </CardContent>
             <CardFooter className="flex justify-end space-x-4">
-              <a 
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-portfolio-light-slate hover:text-portfolio-teal transition-colors"
-                aria-label={`GitHub repository for ${project.title}`}
-              >
-                <Github size={20} />
-              </a>
+              
               <a 
                 href={project.liveLink}
                 target="_blank"
